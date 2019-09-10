@@ -77,9 +77,6 @@ def main():
     os.write(1, b"Main entered!")
 
     while True:
-        print("While iterator entered!")
-        sys.stdout.write("While iterator entered!")
-        os.write(1, b"While iterator entered!")
         greet_bot.get_updates(new_offset)
 
         last_update = greet_bot.get_last_update()
